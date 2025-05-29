@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+main { 
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "upgrades upgrades upgrades upgrades"
+    "customers_payment  customers_payment  customers_payment  toppings"
+    "customers_payment  customers_payment  customers_payment  toppings"
+    "customers_payment  customers_payment  customers_payment  toppings";
+}
+
+.customers_payment  { grid-area: customers_payment ; }
+
+.upgrades { grid-area: upgrades; }
+
+.toppings { grid-area: toppings; }
+
+body {
+  font-family: 'Merriweather Variable', serif;
+}
+

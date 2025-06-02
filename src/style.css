@@ -13,11 +13,21 @@ main {
     "customers_payment  customers_payment  customers_payment  toppings";
 }
 
-.customers_payment  { grid-area: customers_payment ; }
+.customers_payment  { 
+  background-image: url("/src/images/Pizza_counter.jpg");
+  background-color: #cccccc;
+  grid-area: customers_payment ;
+ }
 
-.upgrades { grid-area: upgrades; }
+.upgrades { 
+  grid-area: upgrades; 
+}
 
-.toppings { grid-area: toppings; }
+.toppings { 
+  grid-area: toppings; 
+}
+
+
 
 body {
   font-family: 'Merriweather Variable', serif;

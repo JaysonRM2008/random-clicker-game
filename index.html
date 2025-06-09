@@ -12,22 +12,23 @@
 <main class="w-screen h-screen">
  
   <div class="customers_payment bg-emerald-400" margin: 20px;>
-    <button onclick="changePoint(1)" class="cursor-pointer">
-     
-    <h1 id="pointCounter" lass="text-2xl font-extrabold text-cyan-300">0 Pizza Points</h1>
-    <img src="src/images/Cheese-pizza-1-500x375-removebg-preview.png" width="150" height="150" style="position: relative; top: 50px;" alt="cheese pizza" />
+    <button onclick="basePoints()" class="cursor-pointer">
+    <h1 id="pointCounter" class="cursor-pointer transition-all duration-50 clicker active:scale-75">0 Pizza Points</h1>
+    <img src="src/images/Cheese-pizza-1-500x375-removebg-preview.png" width="150" height="150" style="position: relative; margin: 0;  position: absolute;
+    bottom: 0; left: 50%; transform: translateX(-50%);"  alt="cheese pizza"/>
   </button>
   </div>
 
   <div class="upgrades bg-amber-800" style="display: flex; align-items: flex-start;">
 
-    <button  class="cursor-pointer"> 
-      <img src="src/images/famous_icon.png" style="width: 200px; height: auto; margin-right: 10px;" alt="icon"></button>
+    <button class="cursor-pointer"> 
+      <img src="src/images/famous_icon.png" style="width: 150px; height: auto; margin-right: 10px;" alt="icon"></button>
 
     <button onclick="buyRushHour()" class="cursor-pointer">
       <img src="src/images/11299538-removebg-preview.png" width="150" height="150" style="position: relative; top: 50px;" alt="cheese pizza"> 
     </button>
 </div>
+
 
   <div class="toppings bg-red-950 flex flex-col items-center">
 

@@ -8,7 +8,7 @@ function changePoint(amount) {
     points = points + amount
 
     console.log(points)
-    pointCounter.innerText = points.toFixed + ' Pizza Piont'
+    pointCounter.innerText = points + ' Pizza Piont'
 }
 
 function buyRushHour() {
@@ -27,10 +27,11 @@ function buyfamousPeople() {
     } else {
         alert("your money sucks") 
     }
-
+}
 
 function bigClick() {
-    let basePoint = 1 + (buyRushHourn ** 1.05) + (buyfamouspeople ** 100.05)
+    // let basePoint = 1 + (buyRushHourn ** 1.05) + (buyfamouspeople ** 100.05)
+    let basePoint = 1
 
     changePoint(basePoint)
 }
